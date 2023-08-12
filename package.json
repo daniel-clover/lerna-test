@@ -3,7 +3,7 @@
     "private": true,
     "description": "Learn to to build react package",
     "keywords": [],
-    "author": "PhatNguyen <phatnt.uit@gmail.com> (https://phatnguyenuit.github.io)",
+    "author": "Daniel Donaldson daniel.donaldson@clover.com",
     "workspaces": [
       "examples/*",
       "packages/*"
