@@ -26,6 +26,7 @@ export default {
     }),
     postCSS({
       extract: true,
+      minimize: true,
       plugins: [require("autoprefixer")],
     }),
   ],
