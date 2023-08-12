@@ -1,10 +1,29 @@
 {
   "name": "my-react-package",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.27",
+    "rollup": "^3.28.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "typescript": "^5.1.6"
   }
 }
