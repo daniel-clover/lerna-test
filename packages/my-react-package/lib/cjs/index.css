@@ -1,0 +1,16 @@
+.styles-module_helloCss__kYhzt {
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.styles-module_helloScss__RO3-y {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 200px;
+  border: 1px solid red;
+  border-radius: 8px; }
