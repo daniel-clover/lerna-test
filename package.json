@@ -13,16 +13,31 @@
     "build": "lerna run build --scope my-react-package",
     "clean": "lerna run clean --scope my-react-package",
     "watch": "lerna run watch --scope my-react-package",
-    "package": "lerna exec --scope my-react-package -- npm pack"
+    "package": "lerna exec --scope my-react-package -- npm pack",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "type": "module",
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.2.3",
+    "@storybook/addon-interactions": "^7.2.3",
+    "@storybook/addon-links": "^7.2.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.3",
+    "@storybook/preset-create-react-app": "^7.2.3",
+    "@storybook/react": "^7.2.3",
+    "@storybook/react-webpack5": "^7.2.3",
+    "@storybook/testing-library": "^0.2.0",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "lerna": "^4.0.0",
     "prettier": "^2.5.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "storybook": "^7.2.3",
+    "webpack": "^5.88.2"
   },
   "dependencies": {
     "react-scripts": "^5.0.1"
